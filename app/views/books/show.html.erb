@@ -4,4 +4,4 @@
 
 <p>Body:<%= @book.body %></p>
 
-<p><a href='/edit'>Edit</a> | <a href='/books'>Back</a></p>
+<p><span><%= link_to "Edit", edit_book_path(@book.id) %></span> | <a href='/books'>Back</a></p>
